@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+dbcreds.py
 .Python
 build/
 develop-eggs/
