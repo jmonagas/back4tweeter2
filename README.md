@@ -30,24 +30,49 @@ Remember the foreign keys need to represent relationships, so try to figure out 
 
 API
 You must implement (at a minimum) an API that mimics the tweeterest.ml API. You require the following end points and HTTP request type support
+
 • /api/users
-o GET, POST, DELETE, PATCH
+o GET, POST, DELETE, PATCH = Draft completed
+https://tweeterest.ml/api/users
+GET Example Data:
+JSON Params Sent:
+{
+userId: 1
+}
+JSON Data Returned:
+[{
+"userId": 1,
+"email": "grinch@suess.com",
+"username": "TheGrinch",
+"bio": "There will be no holly, jolly, christmas!",
+"birthdate": "1988-04-07"
+}]
+
 • /api/login
-o POST, DELETE
+o POST, DELETE = Draft completed
+
 • /api/follows
-o GET, POST, DELETE
+o GET, POST, DELETE = Draft completed
+
 • /api/followers
 o GET
+
 • /api/tweets
-o GET, POST, DELETE, PATCH
+o GET, POST, DELETE, PATCH = Draft completed
+
 • /api/tweet-likes
-o GET, POST, DELETE
+o GET, POST, DELETE = Draft completed
+
 • /api/comments
-o GET, POST, DELETE, PATCH
+o GET, POST, DELETE, PATCH = Draft completed
+
 • /api/comment-likes
 o GET, POST, DELETE
+
 The goal of the API at first should be to behave exactly like tweeterest.ml in terms of the required values and return values. This will ensure you don't have to change your vue project at all. If you finish the mimic, make sure you have a git commit / push at that point. You can then add extra features or try to change things if you want different functionality. Make sure you document these changes with comments in the API!
+
 Bonus Tweeter ideas
+
 (5% each unless otherwise indicated):
 • Nested comments
 o User can reply directly to another users comment
